@@ -4,3 +4,6 @@
 ## lowercase-redirector
 Redirect all upercased routes / urls to lowercased urls. On this moment all the redirections are from the 
 HTTP 301-moved-permanently type.
+
+# license
+This bundle is released under the MIT license. More information: https://opensource.org/licenses/MIT
