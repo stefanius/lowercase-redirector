@@ -22,8 +22,6 @@ class RoutingRegexTest extends \PHPUnit_Framework_TestCase
 
     /**
      * See if the configfile and Resources path are readable.
-     *
-     * @before
      */
     public function testConfigFileAccess()
     {
@@ -42,6 +40,8 @@ class RoutingRegexTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Check if some key's exists in the config.
+     *
+     * @depends testConfigFileAccess
      */
     public function testConfigFileData()
     {
@@ -58,6 +58,7 @@ class RoutingRegexTest extends \PHPUnit_Framework_TestCase
      * @param string $input
      * @param bool   $shouldMatch
      *
+     * @depends testConfigFileData
      * @dataProvider testRouteMatchingRegexDataProvider
      */
     public function testRouteMatchingRegex($input, $shouldMatch)
