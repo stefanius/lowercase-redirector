@@ -16,6 +16,6 @@ class RedirectController
      */
     public function lowerCaseAction(Request $request)
     {
-        return new RedirectResponse(strtolower($request->getUri()) , 301);
+        return new RedirectResponse(strtolower($request->getUri()), 301);
     }
 }
