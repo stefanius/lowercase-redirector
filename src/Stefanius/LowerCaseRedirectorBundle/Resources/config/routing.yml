@@ -1,0 +1,6 @@
+redirect_to_lowercase:
+    path: /{url}/
+    defaults: { _controller: StefaniusLowerCaseRedirectorBundle:Redirect:lowerCase }
+    requirements:
+        url: .*/$
+    methods: [GET]
