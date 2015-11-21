@@ -20,7 +20,8 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $treeBuilder->root('stefanius_lower_case_redirector');
 
-        //$rootNode = $treeBuilder->root('stefanius_lower_case_redirector'); -> enable this line again when the $rootNode is used.
+        //$rootNode = $treeBuilder->root('stefanius_lower_case_redirector');
+        //-> enable above line again when the $rootNode is used.
 
         return $treeBuilder;
     }
